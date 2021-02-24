@@ -1,0 +1,1 @@
+Desarrollo de la pokedex, con la finalidad de consultar cada pokemon y obtener su información jeje
