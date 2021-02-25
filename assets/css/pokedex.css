@@ -68,9 +68,9 @@ body {
 .primer-contenedor {
     background: var(--maron);
     width: 76vh;
-    height: 67vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    height: 73vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     margin-left: 32vh;
     border-top-left-radius: 24px;
     border-top-right-radius: 27px;
@@ -98,13 +98,54 @@ body {
     margin-top: 6px;
 }
 
-.button-yellow{
+.sombra-r{
+    background: var(--marron-tab);
+    width: 16px;
+    height: 16px;
+    border-radius: 2rem;
+    margin-left: 1px;
+    margin-top: 0px;
+}
+
+#esfera-r{
+    width: 12px;
+    border-radius: 1rem;
+    height: 12px;
+    background: var(--rojo-tab);
+}
+
+.button-yellow {
     background: var(--amarillo-tab);
     width: var(--width-buton);
     height: var(--height-buton);
     border: 1px var(--amarillo-tab) solid;
     border-radius: var(--border-radius-buton);
-    margin-top: 6px;
+}
+
+.primary-y{
+    margin-left: 135px;
+    margin-top: -18px;
+}
+
+.secoundary-y{
+    margin-left: 160px;
+    margin-top: -18px;
+}
+
+.sombra-y{
+    width: 15px;
+    height: 15px;
+    background: var(--amarillo-back);
+    border-radius: 1rem;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.esfera-y {
+    width: 11px;
+    height: 11px;
+    border-radius: 1rem;
+    background: var(--amarillo-tab);
 }
 
 .alarma{
@@ -112,10 +153,9 @@ body {
     width: 205px;
     height: 64px;
     position: absolute;
-    margin-top: 34px;
+    margin-top: 32px;
     margin-left: var(--espaciado-left-pc);
     border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 7px;
 }
 
 #radar{
@@ -125,6 +165,24 @@ body {
     border-radius: 4rem;
     margin-left: 36px;
     margin-top: -14px;
+}
+/* 
+#curva{
+    background: var(--maron);
+    height: 61px;
+    width: 64px;
+    margin-left: 225px;
+    margin-top: -53px;
+} */
+
+#poligono{
+    width: 78px;
+    height: 63px;
+    background: var(--rojo);
+    position: fixed;
+    margin-top: -50px;
+    margin-left: 201px;
+    border-bottom-right-radius: 305px;
 }
 
 #circulo-azul{
@@ -160,9 +218,9 @@ body {
 .lienzo{
     background: var(--rojo);
     width: 439px;
-    height: 318px;
+    height: 354px;
     position: absolute;
-    margin-top: 104px;
+    margin-top: 100px;
     margin-left: var(--espaciado-left-pc);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 21px;
@@ -170,10 +228,19 @@ body {
     justify-content: center
 }
 
+#linea-r{
+    width: 4px;
+    height: 62px;
+    background: var(--rojo);
+    position: absolute;
+    margin-left: 443px;
+    margin-top: 40px;
+}
+
 .content-pokedex{
     background: var(--maron);
     width: 427px;
-    height: 314px;
+    height: 349px;
     position: absolute;
     margin-left: var(--espaciado-left-pc);
     border-top-left-radius: 5px;
@@ -182,36 +249,57 @@ body {
     border-bottom-right-radius: 7px;
 }
 
+#contorno-info-window{
+    background: var(--contorno-info-windows);
+    width: 407px;
+    height: 215px;
+    margin-top: 7px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-left: 14px;
+    position: relative;
+    clip-path: polygon(0px 0px, 407px 0px, 407px 215px, 52px 216px, 0px 166px);
+}
 
 #info-window{
     background: var(--info-window);
-    width: 402px;
-    height: 150px;
-    margin-top: 5px;
+    width: 401px;
+    height: 208px;
+    margin-top: -214px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    margin-left: 17px;
-    border-left: 2px var(--contorno-info-windows) solid;
-    border-top: 1px var(--contorno-info-windows) solid;
+    margin-left: 20px;
+    position: absolute;
+    border-bottom-right-radius: 12px;
+    clip-path: polygon(0px 0px, 401px 0px, 401px 208px, 49px 209px, 0px 162px);
 }
 
-#content-info{
+/* #content-info{
     background: var(--info-window);
     width: 402px;
     height: 50px;
-    margin-top: 0px;
-    margin-left: 17px;
-    border-left: 2px var(--contorno-info-windows) solid;
-    border-bottom: 2px var(--contorno-info-windows) solid;
-    border-bottom-right-radius: 12px;
+    margin-top: -2px;
+    margin-left: 19px;
+    border-bottom-right-radius: 17px;
 }
+
+#contorno-content-info{
+    background: var(--contorno-info-windows);
+    height: 52px;
+    width: 408px;
+    position: absolute;
+    margin-left: 13px;
+    border-bottom-right-radius: 19px;
+    margin-top: -1px;
+} */
 
 #preview{
     background: var(--preview);
-    width: 290px;
-    height: 144px;
+    width: 276px;
+    height: 148px;
     margin-top: 15px;
-    margin-left: 51px;
+    margin-left: 65px;
     border-radius: 22px;
     border-top: 1px var(--contorno-preview) solid;
     border-right: 1px var(--contorno-preview) solid;
@@ -221,9 +309,9 @@ body {
 }
 
 #pokemon{
-    width: 26%;
-    margin-left: 110px;
-    margin-top: 7px;
+    width: 72%;
+    margin-top: -38px;
+    margin-bottom: -50px;
 }
 
 #nombre_pokemon{
@@ -236,22 +324,22 @@ body {
 
 .botones{
     position: absolute;
-    margin-top: 219px;
+    margin-top: 225px;
     margin-left: var(--espaciado-left-pc);
 }
 
 #contorno-boton-circular{
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     background: var(--contorno-botones);
     border-radius: 4rem;
-    margin-left: 26px;
-    margin-top: -6px;
+    margin-left: 32px;
+    margin-top: -9px;
 }
 
 #boton-circular{
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     background: var(--botones);
     border-radius: 4rem;
     margin-left: 3px;
@@ -284,7 +372,7 @@ body {
     height: 63px;
     margin-left: 64px;
     border-radius: 6px;
-    margin-top: 9px;
+    margin-top: 18px;
     border: 1px #00000061 solid;
 }
 
@@ -299,16 +387,16 @@ body {
 
 #contorno-controlls-vertical{
     width: 25px;
-    height: 73px;
+    height: 78px;
     background: var(--contorno-botones);
     border-radius: 6px;
-    margin-top: -80px;
+    margin-top: -89px;
     margin-left: 336px;
 }
 
 #controlls-vertical{
     width: 25px;
-    height: 73px;
+    height: 77px;
     background: var(--botones);
     border-radius: 7px;
     margin-top: -53px;
@@ -316,29 +404,29 @@ body {
 }
 
 #contorno-controlls-horizontal{
-    width: 73px;
+    width: 78px;
     height: 25px;
     background: var(--contorno-botones);
     border-radius: 6px;
-    margin-top: -48px;
-    margin-left: 311px;
+    margin-top: -49px;
+    margin-left: 310px;
 }
 
 #controlls-horizontal{
-    width: 73px;
-    height: 25px;
+    width: 75px;
+    height: 23px;
     background: var(--botones);
     border-radius: 6px;
     margin-top: -25px;
-    margin-left: 314px;
+    margin-left: 313px;
 }
 
 #circulito{
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     border-radius: 2rem;
     border: 1px black solid;
     margin-left: 343px;
-    margin-top: -39px;
+    margin-top: -44px;
     background: #0000004a;
 }

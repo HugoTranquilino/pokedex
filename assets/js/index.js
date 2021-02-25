@@ -17,7 +17,7 @@ function renderPokemon(image) {
 //     renderPokemon(pokemon.sprites.front_default)
 // })
 
-fetch('https://pokeapi.co/api/v2/pokemon/rillaboom')
+fetch('https://pokeapi.co/api/v2/pokemon/squirtle')
 .then(response => response.json())
 .then((data) => {
     // debugger

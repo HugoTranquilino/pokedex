@@ -14,9 +14,24 @@
     <section id="primer-seccion">
         <div class="primer-contenedor">
             <div class="tablero">
-                <button class="button-red"></button>
+                <div class="button-red">
+                    <div class="sombra-r">
+                        <div id="esfera-r"></div>
+                    </div>
+                </div>
+                <div class="button-yellow primary-y">
+                    <div class="sombra-y">
+                        <div class="esfera-y"></div>
+                    </div>
+                </div>
+                <div class="button-yellow secoundary-y">
+                    <div class="sombra-y">
+                        <div class="esfera-y"></div>
+                    </div>
+                </div>
+                <!-- <button class="button-red"></button>
                 <button class="button-yellow"></button>
-                <button class="button-yellow"></button>
+                <button class="button-yellow"></button> -->
             </div>
             <div class="alarma">
                 <div id="radar">
@@ -26,18 +41,18 @@
                         </div>
                     </div>
                 </div>
+                <div id="poligono"></div>
             </div>
+            <div id="linea-r"></div>
             <div class="lienzo">
                 <div class="content-pokedex">
-                    <div id="info-window">
+                    <div id="contorno-info-window" style="clip-path: polygon(0px 0px, 407px 0px, 407px 199px, 46px 199px, 0px 137px);"></div>
+                    <div id="info-window" style="clip-path: polygon(0px 133px, 0px 0px, 401px 0px, 401px 192px, 44px 192px);">
                         <div id="preview">
-                            <img src="" id="pokemon" alt="">
-                            <center>
-                                <span id="nombre_pokemon" value=""></span>
-                            </center>
+                            <center><img src="" id="pokemon" alt=""></center>
+                            <center><span id="nombre_pokemon" value=""></span></center>
                         </div>
                     </div>
-                    <div id="content-info"></div>
                 </div>
                 <div class="botones">
                     <div id="contorno-boton-circular">
