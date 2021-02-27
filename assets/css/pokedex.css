@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
 :root {
     /* general */
     --rojo: #ce1131;
     --maron: #810a1e;
 
     --width-pc: 469px;
-    --espaciado-left-pc:8px;
+    --espaciado-left-pc: 8px;
 
     /* tablero */
     --width-buton: 15px;
     --border-radius-buton: 1rem;
     --height-buton: 16px;
-    
+
     --rojo-tab: #ea0507;
     --marron-tab: #9a0405;
 
@@ -46,35 +48,89 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    /* height: 100vh; */
     align-items: center;
     /* justify-content: center; */
     display: flex;
     background: rgba(224, 210, 210, 0.671);
+    font-family: 'RocknRoll One', sans-serif;
 }
+
+#seccion_busqueda {
+    margin-top: -30%;
+    margin-left: 177px;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+.title-buscador {
+    margin-bottom: 3px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+#buscador {
+    border-radius: 1rem;
+    height: 24px;
+    /* width: 186px; */
+    /* padding-bottom: 1px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+#buscar {
+    width: 74px;
+    height: 24px;
+    border-radius: 5px;
+    margin-top: -27px;
+    position: absolute;
+    margin-left: 211px;
+    background: var(--azul-claro);
+    color: black;
+    font-weight: 700;
+}
+
+/* ----------------------------------------------- */
 
 #primer-seccion {
     /* background: yellow; */
     width: 50%;
     height: 450px;
+    margin-top: 100px;
 }
 
 #segunda-seccion {
     /* background: orange; */
     width: 50%;
     height: 450px;
+    margin-top: 100px;
 }
 
 .primer-contenedor {
     background: var(--maron);
-    width: 76vh;
-    height: 73vh;
+    /* width: 76vh; */
+    /* height: 73vh; */
+    width: 479px;
+    height: 459px;
     margin-top: 1vh;
     margin-bottom: 1vh;
     margin-left: 32vh;
     border-top-left-radius: 24px;
     border-top-right-radius: 27px;
     border-bottom-left-radius: 24px;
+}
+
+.segundo-contenedor {
+    width: 479px;
+    height: 396px;
+    /* height: 459px; */
+    background: var(--maron);
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    margin-top: 69px;
+    margin-bottom: 1vh;
+    margin-left: -1px;
 }
 
 .tablero {
@@ -98,7 +154,7 @@ body {
     margin-top: 6px;
 }
 
-.sombra-r{
+.sombra-r {
     background: var(--marron-tab);
     width: 16px;
     height: 16px;
@@ -107,7 +163,7 @@ body {
     margin-top: 0px;
 }
 
-#esfera-r{
+#esfera-r {
     width: 12px;
     border-radius: 1rem;
     height: 12px;
@@ -122,17 +178,17 @@ body {
     border-radius: var(--border-radius-buton);
 }
 
-.primary-y{
+.primary-y {
     margin-left: 135px;
     margin-top: -18px;
 }
 
-.secoundary-y{
+.secoundary-y {
     margin-left: 160px;
     margin-top: -18px;
 }
 
-.sombra-y{
+.sombra-y {
     width: 15px;
     height: 15px;
     background: var(--amarillo-back);
@@ -148,7 +204,7 @@ body {
     background: var(--amarillo-tab);
 }
 
-.alarma{
+.alarma {
     background: var(--rojo);
     width: 205px;
     height: 64px;
@@ -158,7 +214,7 @@ body {
     border-bottom-left-radius: 6px;
 }
 
-#radar{
+#radar {
     width: 65px;
     height: 65px;
     background: var(--blanco);
@@ -166,6 +222,7 @@ body {
     margin-left: 36px;
     margin-top: -14px;
 }
+
 /* 
 #curva{
     background: var(--maron);
@@ -175,17 +232,17 @@ body {
     margin-top: -53px;
 } */
 
-#poligono{
+#poligono {
     width: 78px;
     height: 63px;
     background: var(--rojo);
-    position: fixed;
+    /* position: fixed; */
     margin-top: -50px;
     margin-left: 201px;
     border-bottom-right-radius: 305px;
 }
 
-#circulo-azul{
+#circulo-azul {
     background: var(--azul);
     width: 55px;
     height: 55px;
@@ -195,7 +252,7 @@ body {
     margin-top: 5px;
 }
 
-#circulo-claro{
+#circulo-claro {
     background: var(--azul-claro);
     width: 44px;
     height: 44px;
@@ -205,7 +262,7 @@ body {
     margin-left: 4px;
 }
 
-#centro{
+#centro {
     background: var(--blanco);
     width: 11px;
     height: 11px;
@@ -215,7 +272,7 @@ body {
     margin-left: 14px;
 }
 
-.lienzo{
+.lienzo {
     background: var(--rojo);
     width: 439px;
     height: 354px;
@@ -228,7 +285,7 @@ body {
     justify-content: center
 }
 
-#linea-r{
+#linea-r {
     width: 4px;
     height: 62px;
     background: var(--rojo);
@@ -237,7 +294,7 @@ body {
     margin-top: 40px;
 }
 
-.content-pokedex{
+.content-pokedex {
     background: var(--maron);
     width: 427px;
     height: 349px;
@@ -249,7 +306,7 @@ body {
     border-bottom-right-radius: 7px;
 }
 
-#contorno-info-window{
+#contorno-info-window {
     background: var(--contorno-info-windows);
     width: 407px;
     height: 215px;
@@ -262,7 +319,7 @@ body {
     clip-path: polygon(0px 0px, 407px 0px, 407px 215px, 52px 216px, 0px 166px);
 }
 
-#info-window{
+#info-window {
     background: var(--info-window);
     width: 401px;
     height: 208px;
@@ -294,7 +351,7 @@ body {
     margin-top: -1px;
 } */
 
-#preview{
+#preview {
     background: var(--preview);
     width: 276px;
     height: 148px;
@@ -308,13 +365,23 @@ body {
     justify-content: center;
 }
 
-#pokemon{
-    width: 72%;
+#pokemon {
+    /* width: 50%; */
+    width: 123px;
+    /* height: 123px; */
+    /* margin-top: 5px; */
+    /* margin-bottom: 5px; */
+    /* width: 72%;
     margin-top: -38px;
-    margin-bottom: -50px;
+    margin-bottom: -50px; */
 }
 
-#nombre_pokemon{
+#img-pokemon {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#nombre_pokemon {
     justify-content: center;
     font-size: 18px;
     font-weight: 600;
@@ -322,13 +389,13 @@ body {
     letter-spacing: 1pt;
 }
 
-.botones{
+.botones {
     position: absolute;
     margin-top: 225px;
     margin-left: var(--espaciado-left-pc);
 }
 
-#contorno-boton-circular{
+#contorno-boton-circular {
     width: 36px;
     height: 36px;
     background: var(--contorno-botones);
@@ -337,7 +404,7 @@ body {
     margin-top: -9px;
 }
 
-#boton-circular{
+#boton-circular {
     width: 32px;
     height: 32px;
     background: var(--botones);
@@ -347,7 +414,7 @@ body {
     cursor: pointer;
 }
 
-#primer-boton{
+#primer-boton {
     width: 55px;
     height: 10px;
     background: var(--primer-boton);
@@ -357,7 +424,7 @@ body {
     border: 1px #00000061 solid;
 }
 
-#segundo-boton{
+#segundo-boton {
     width: 55px;
     height: 10px;
     background: var(--segundo-boton);
@@ -367,25 +434,25 @@ body {
     border: 1px #00000061 solid;
 }
 
-#contorno-caja{
-    width: 180px;
-    height: 63px;
-    margin-left: 64px;
+#contorno-caja {
+    width: 216px;
+    height: 71px;
+    margin-left: 56px;
     border-radius: 6px;
     margin-top: 18px;
-    border: 1px #00000061 solid;
+    border: 2px #00000061 solid;
 }
 
-#caja{
+#caja {
     background: var(--caja);
-    width: 169px;
-    height: 51px;
-    margin-top: -58px;
-    margin-left: 70px;
+    width: 209px;
+    height: 65px;
+    margin-top: -70px;
+    margin-left: 61px;
     border-radius: 5px;
 }
 
-#contorno-controlls-vertical{
+#contorno-controlls-vertical {
     width: 25px;
     height: 78px;
     background: var(--contorno-botones);
@@ -394,7 +461,7 @@ body {
     margin-left: 336px;
 }
 
-#controlls-vertical{
+#controlls-vertical {
     width: 25px;
     height: 77px;
     background: var(--botones);
@@ -403,7 +470,7 @@ body {
     margin-left: 339px;
 }
 
-#contorno-controlls-horizontal{
+#contorno-controlls-horizontal {
     width: 78px;
     height: 25px;
     background: var(--contorno-botones);
@@ -412,7 +479,7 @@ body {
     margin-left: 310px;
 }
 
-#controlls-horizontal{
+#controlls-horizontal {
     width: 75px;
     height: 23px;
     background: var(--botones);
@@ -421,7 +488,7 @@ body {
     margin-left: 313px;
 }
 
-#circulito{
+#circulito {
     width: 13px;
     height: 13px;
     border-radius: 2rem;

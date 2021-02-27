@@ -6,11 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" href="assets/image/pokeball.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/pokedex.css">
+
     <title>Pokedex</title>
 </head>
 
 <body>
+    <section id="seccion_busqueda">
+        <div class="contenedor">
+            <div class="nav">
+                <!-- .... -->
+            </div>
+            <div class="sec-buscar">
+                <div class="title-buscador">
+                    <center><label for="">Buscar por nombre</label></center>
+                </div>
+                <div class="buscador">
+                    <input type="text" name="buscador" id="buscador">
+                </div>
+                <button id="buscar" name="buscar" type="button" >Buscar</button>
+            </div>
+        </div>
+    </section>
+    
     <section id="primer-seccion">
         <div class="primer-contenedor">
             <div class="tablero">
@@ -29,9 +49,6 @@
                         <div class="esfera-y"></div>
                     </div>
                 </div>
-                <!-- <button class="button-red"></button>
-                <button class="button-yellow"></button>
-                <button class="button-yellow"></button> -->
             </div>
             <div class="alarma">
                 <div id="radar">
@@ -46,11 +63,17 @@
             <div id="linea-r"></div>
             <div class="lienzo">
                 <div class="content-pokedex">
-                    <div id="contorno-info-window" style="clip-path: polygon(0px 0px, 407px 0px, 407px 199px, 46px 199px, 0px 137px);"></div>
-                    <div id="info-window" style="clip-path: polygon(0px 133px, 0px 0px, 401px 0px, 401px 192px, 44px 192px);">
+                    <div id="contorno-info-window"
+                        style="clip-path: polygon(0px 0px, 407px 0px, 407px 199px, 46px 199px, 0px 137px);"></div>
+                    <div id="info-window"
+                        style="clip-path: polygon(0px 133px, 0px 0px, 401px 0px, 401px 192px, 44px 192px);">
                         <div id="preview">
-                            <center><img src="" id="pokemon" alt=""></center>
-                            <center><span id="nombre_pokemon" value=""></span></center>
+                            <div id="img-pokemon">
+                                <center><img src="" id="pokemon" alt=""></center>
+                            </div>
+                            <!-- <div id="name_pokemon">
+                                <center><span id="nombre_pokemon" value=""></span></center>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -61,7 +84,11 @@
                     <div id="primer-boton"></div>
                     <div id="segundo-boton"></div>
                     <div id="contorno-caja"></div>
-                    <div id="caja"></div>
+                    <div id="caja">
+                        <div id="name_pokemon">
+                                <center><span id="nombre_pokemon" value=""></span></center>
+                            </div>
+                    </div>
                     <div id="contorno-controlls-vertical"></div>
                     <div id="contorno-controlls-horizontal"></div>
                     <div id="controlls-horizontal"></div>
@@ -71,8 +98,13 @@
             </div>
         </div>
     </section>
-    <section id="segunda-seccion"></section>
+    <section id="segunda-seccion">
+        <div class="segundo-contenedor">
+            
+        </div>
+    </section>
 
     <script src="./assets/js/index.js" type=""></script>
 </body>
+
 </html>
