@@ -1,0 +1,13 @@
+@import 'variables/colors-theme.scss';
+@import 'variables/layaouts.scss';
+@import 'variables/padding.scss';
+@import 'variables/typography.scss';
+
+body{
+    margin: 0;
+    align-items: center;
+    display: flex;
+    background: red;
+    // background: rgba(224, 210, 210, 0.671);
+    font-family: 'RocknRoll One', sans-serif;
+}

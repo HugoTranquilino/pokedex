@@ -5,7 +5,7 @@
     --rojo: #ce1131;
     --maron: #810a1e;
 
-    --width-pc: 469px;
+    --width-pc: 387px;
     --espaciado-left-pc: 8px;
 
     /* tablero */
@@ -48,9 +48,7 @@
 
 body {
     margin: 0;
-    /* height: 100vh; */
     align-items: center;
-    /* justify-content: center; */
     display: flex;
     background: rgba(224, 210, 210, 0.671);
     font-family: 'RocknRoll One', sans-serif;
@@ -95,8 +93,8 @@ body {
 
 #primer-seccion {
     /* background: yellow; */
-    width: 50%;
-    height: 450px;
+    /* width: 50%;
+    height: 450px; */
     margin-top: 100px;
 }
 
@@ -111,9 +109,11 @@ body {
     background: var(--maron);
     /* width: 76vh; */
     /* height: 73vh; */
-    width: 479px;
+    
+    /* width: 479px; */
+    width: 400px;
     height: 459px;
-    margin-top: 1vh;
+    margin-top: 5%;
     margin-bottom: 1vh;
     margin-left: 32vh;
     border-top-left-radius: 24px;
@@ -121,17 +121,35 @@ body {
     border-bottom-left-radius: 24px;
 }
 
+/* segundo contenedor */
+
 .segundo-contenedor {
-    width: 479px;
+    /* width: 479px;
     height: 396px;
-    /* height: 459px; */
     background: var(--maron);
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
     margin-top: 69px;
     margin-bottom: 1vh;
+    margin-left: -1px; */
+    width: 423px;
+    height: 295px;
+    background: var(--maron);
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    margin-top: 170px;
+    margin-bottom: 1vh;
     margin-left: -1px;
 }
+
+.top-curva {
+    width: 265px;
+    height: 121px;
+    background:var(--maron);
+    margin-top: 51px;
+    position: absolute;
+}
+/*  */
 
 .tablero {
     background: var(--rojo);
@@ -274,7 +292,8 @@ body {
 
 .lienzo {
     background: var(--rojo);
-    width: 439px;
+    /* width: 439px; */
+    width: var(--width-pc);
     height: 354px;
     position: absolute;
     margin-top: 100px;
@@ -296,7 +315,8 @@ body {
 
 .content-pokedex {
     background: var(--maron);
-    width: 427px;
+    /* width: 427px; */
+    width: 374px;
     height: 349px;
     position: absolute;
     margin-left: var(--espaciado-left-pc);
@@ -308,7 +328,8 @@ body {
 
 #contorno-info-window {
     background: var(--contorno-info-windows);
-    width: 407px;
+    /* width: 407px; */
+    width: 335px;
     height: 215px;
     margin-top: 7px;
     border-top-left-radius: 12px;
@@ -321,7 +342,8 @@ body {
 
 #info-window {
     background: var(--info-window);
-    width: 401px;
+    /* width: 401px; */
+    width: 325px;
     height: 208px;
     margin-top: -214px;
     border-top-left-radius: 12px;
@@ -354,9 +376,11 @@ body {
 #preview {
     background: var(--preview);
     width: 276px;
-    height: 148px;
+    height: 157px;
+    /* height: 148px; */
     margin-top: 15px;
-    margin-left: 65px;
+    /* margin-left: 65px; */
+    margin-left: 37px;
     border-radius: 22px;
     border-top: 1px var(--contorno-preview) solid;
     border-right: 1px var(--contorno-preview) solid;
@@ -497,3 +521,68 @@ body {
     margin-top: -44px;
     background: #0000004a;
 }
+
+
+
+/* media query */
+@media (max-width: 576px){
+    section#seccion_busqueda {
+        margin: 0px 0px 440px 52px;
+    }
+
+    .primer-contenedor {
+        width: 50vh;
+        /* height: 69vh; */
+            margin: 2% 0 0 6%;
+    }
+
+    .tablero {
+        width: 48vh;
+    }
+
+    .lienzo {
+        width: 48vh;
+    }
+
+    .content-pokedex {
+        width: 46vh;
+    }
+
+    /*  */
+    div#contorno-info-window {
+        width: 40vh;
+    }
+
+    div#info-window {
+        width: 38vh;
+    }
+
+    div#preview {
+        width: 31vh;
+        margin-left: 12%;
+    }
+
+    div#linea-r {
+        margin-left: 323px;
+        width: 5px;
+    }
+
+    div#contorno-caja {
+        margin-left: 6%;
+        width: 40%;
+    }
+
+    div#caja {
+        width: 37%;
+        margin-left: 8%;
+    } 
+
+    div#controlles {
+        margin-left: -25%;
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 768px){}
+@media (max-width: 992px){}
+@media (max-width: 1200px){}
