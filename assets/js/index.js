@@ -4,8 +4,8 @@ const name_pokemon = document.querySelector('#nombre_pokemon')
 
 document.getElementById("buscar").addEventListener("click",
     function buscar() {
-        var pokemon_buscado = document.getElementById("buscador").value;
-
+        var pokemon_buscado = document.getElementById("buscador").value.toLowerCase();
+        
         if(pokemon_buscado != ''){
             fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon_buscado}`)
                 .then(response => response.json())
