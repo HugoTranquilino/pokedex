@@ -35,7 +35,8 @@
 
     /* botones */
     --contorno-botones: #050405;
-    --botones: #222222;
+    /* --botones: #222222; */
+    --botones: #343333;
 
     --primer-boton: #c70c13;
     --segundo-boton: #095378;
@@ -121,19 +122,11 @@ body{
 
 .primer-contenedor {
     background: var(--maron);
-    /* width: 76vh; */
-    /* height: 73vh; */
-
-    /* width: 479px; */
     width: 400px;
     height: 459px;
-    margin-top: 5%;
-    margin-bottom: 1vh;
+    margin-bottom: 3%;
     margin-left: 5%;
-    /* margin-left: 32vh; */
-    border-top-left-radius: 24px;
-    border-top-right-radius: 27px;
-    border-bottom-left-radius: 24px;
+    border-radius: 24px;
 }
 
 /* segundo contenedor */
@@ -214,12 +207,12 @@ body{
 
 .primary-y {
     margin-left: 135px;
-    margin-top: -18px;
+    margin-top: -16px;
 }
 
 .secoundary-y {
     margin-left: 160px;
-    margin-top: -18px;
+    margin-top: -16px;
 }
 
 .sombra-y {
@@ -475,7 +468,7 @@ body{
 }
 
 #contorno-caja {
-    width: 216px;
+    width: 203px;
     height: 71px;
     margin-left: 56px;
     border-radius: 6px;
@@ -485,15 +478,23 @@ body{
 
 #caja {
     background: var(--caja);
-    width: 209px;
-    height: 65px;
-    margin-top: -70px;
-    margin-left: 61px;
+    width: 192px;
+    height: 61px;
+    margin-top: 2px;
+    margin-left: 3px;
     border-radius: 5px;
+    position: absolute;
+}
+
+#seccion-botones {
+    position: absolute;
+    margin-top: 221px;
 }
 
 #controlles {
-    margin-left: -24px;
+    margin-top: 335px;
+    position: absolute;
+    margin-left: 70%;
 }
 
 #contorno-controlls-vertical {
@@ -502,7 +503,7 @@ body{
     background: var(--contorno-botones);
     border-radius: 6px;
     margin-top: -89px;
-    margin-left: 336px;
+    margin-left: 24px;
 }
 
 #controlls-vertical {
@@ -511,7 +512,7 @@ body{
     background: var(--botones);
     border-radius: 7px;
     margin-top: -53px;
-    margin-left: 339px;
+    margin-left: 28px;
 }
 
 #contorno-controlls-horizontal {
@@ -520,7 +521,7 @@ body{
     background: var(--contorno-botones);
     border-radius: 6px;
     margin-top: -49px;
-    margin-left: 310px;
+    /* margin-left: 310px; */
 }
 
 #controlls-horizontal {
@@ -529,7 +530,7 @@ body{
     background: var(--botones);
     border-radius: 6px;
     margin-top: -25px;
-    margin-left: 313px;
+    margin-left: 4px;
 }
 
 #circulito {
@@ -537,21 +538,26 @@ body{
     height: 13px;
     border-radius: 2rem;
     border: 1px black solid;
-    margin-left: 343px;
-    margin-top: -44px;
+    margin-left: 33px;
+    margin-top: -41px;
     background: #0000004a;
 }
 
+#des_pokemon {
+    position: absolute;
+    margin-top: 236px;
+    margin-left: -23px;
+}
 
+#name_pokemon {
+    margin-top: 8%;
+}
 
 /* media query */
 @media (max-width: 576px) {
-    /* section#seccion_busqueda {
-        margin: 0px 0px 440px 52px;
-    } */
-
+    
     .primer-contenedor {
-        width: 50vh;
+        width: 100%;
         margin-top: 2%;
         margin-left: 1%;
         margin-right: 1%;
@@ -559,56 +565,122 @@ body{
     }
 
     .tablero {
-        width: 48vh;
+        width: 86%;
+    }
+
+    .alarma {
+        height: 49px;
+    }
+
+    #radar {
+        width: 55px;
+        height: 55px;
+    }
+
+    #circulo-azul {
+        height: 47px;
+        width: 47px;
+    }
+
+    #circulo-claro {
+        height: 38px;
+        width: 38px;
+    }
+
+    #poligono {
+        width: 38px;
+        height: 58px;
     }
 
     .lienzo {
-        width: 48vh;
+        width: 86%;
+        height: 363px;
+        margin-top: 87px;
+        border-bottom-right-radius: 21px;
     }
 
     .content-pokedex {
-        width: 46vh;
+        width: 95%;
+        border-bottom-right-radius: 18px;
+        height: 355px;
+        margin-top: 0px;
     }
 
     .botones {
-        /* position: absolute; */
-        /* margin-top: 225px; */
-        margin-left: 0px;
+        margin-left: -7px;
     }
 
-    /*  */
-    div#contorno-info-window {
-        width: 40vh;
+    #contorno-info-window {
+        width: 88%;
     }
 
-    div#info-window {
-        width: 38vh;
+    #info-window {
+        width: 84%;
     }
 
-    div#preview {
-        width: 31vh;
+    #preview {
+        width: 85%;
         margin-left: 12%;
     }
 
-    div#linea-r {
+    #pokemon {
+        margin-top: 2%;
+        width: 66%;
+    }
+
+    #linea-r {
         margin-left: 323px;
         width: 5px;
     }
 
-    div#contorno-caja {
+
+    #des_pokemon {
+        margin-left: 4%;
+        margin-top: 255px;
+    }
+
+    #name_pokemon {
+        margin-top: 11%;
+    }
+
+    #contorno-caja {
         margin-left: 26px;
-        width: 40%;
+        width: 140px;
         height: 74px;
+        margin-top: 6%;
     }
 
-    div#caja {
-        width: 37%;
-        margin-left: 8%;
+    #caja {
+        width: 78%;
+        margin-top: 3px;
+        margin-left: 3px;
     }
 
-    div#controlles {
-        margin-left: -25%;
-        margin-top: 2%;
+    #seccion-botones {
+        position: absolute;
+        margin-top: 221px;
+    }
+
+    #controlles {
+        position: absolute;
+        margin-top: 342px;
+        margin-left: 67%;
+    }
+
+    #contorno-controlls-vertical {
+        margin-left: 23px;
+    }
+
+    #controlls-vertical {
+        margin-left: 26px;
+    }
+
+    #controlls-horizontal {
+        margin-left: 4px;
+    }
+
+    #circulito {
+        margin-left: 32px;
     }
 }
 
