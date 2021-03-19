@@ -20,6 +20,8 @@ document.getElementById("buscar").addEventListener("click",
                 alert('pokemon no encontrado')
                 document.getElementById("buscador").value = "";
             }
+        }else{
+            alert('Debes ingresa el nombre del pokemon que deseas buscar')
         }
     }
     // function buscar() {
