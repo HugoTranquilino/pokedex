@@ -19,6 +19,8 @@ document.getElementById("buscar").addEventListener("click",
                 console.log(pokemon_buscado)
                 alert('pokemon no encontrado')
                 document.getElementById("buscador").value = "";
+                document.getElementById("pokemon").src = "";
+                document.getElementById("nombre_pokemon").innerHTML = "";
             }
         }else{
             alert('Debes ingresa el nombre del pokemon que deseas buscar')
