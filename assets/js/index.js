@@ -18,6 +18,7 @@ document.getElementById("buscar").addEventListener("click",
             }else{
                 console.log(pokemon_buscado)
                 alert('pokemon no encontrado')
+                document.getElementById("buscador").value = "";
             }
         }
     }
