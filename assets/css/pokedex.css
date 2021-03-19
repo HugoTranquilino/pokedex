@@ -95,12 +95,19 @@ body{
     font-weight: 500;
     margin-left: 4%;
     font-size: 14px;
+    width: 73px;
+    padding: 3px;
 }
 
 #buscar:hover{
-    border: 1px black solid;
-    background: var(--azul);
-    color: white;
+    -webkit-box-shadow: -2px 1px 10px -1px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: -2px 1px 10px -1px rgba(0, 0, 0, 0.59);
+    box-shadow: -2px 1px 10px -1px rgba(0, 0, 0, 0.59);
+    width: 79px;
+    font-size: 16px;
+    
+    /* transition: box-shadow 0.5s ease-out, width 0.5s ease-out; */
+
 }
 
 
