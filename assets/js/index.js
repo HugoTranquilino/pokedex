@@ -3,32 +3,31 @@ const name_pokemon = document.querySelector('#nombre_pokemon')
 
 
 document.getElementById("buscar").addEventListener("click",
-    async function buscar(){
+    async function buscar() {
         var pokemon_buscado = document.getElementById("buscador").value.toLowerCase();
-        if(pokemon_buscado != ''){
+        if (pokemon_buscado != '') {
             const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon_buscado}`)
-            // console.log(response.status);
-            if(response.status ==  200){
+            if (response.status == 200) {
                 const pokemon_b = await response.json();
                 let pokemon = pokemon_b.sprites.other.dream_world.front_default;
                 let name_pokemon = pokemon_b.species.name;
                 renderPokemon(pokemon)
                 document.getElementById('nombre_pokemon').innerHTML = name_pokemon;
                 console.log(pokemon);
-            }else{
+            } else {
                 console.log(pokemon_buscado)
                 alert('pokemon no encontrado')
                 document.getElementById("buscador").value = "";
                 document.getElementById("pokemon").src = "";
                 document.getElementById("nombre_pokemon").innerHTML = "";
             }
-        }else{
+        } else {
             alert('Debes ingresa el nombre del pokemon que deseas buscar')
         }
     }
     // function buscar() {
     //     var pokemon_buscado = document.getElementById("buscador").value.toLowerCase();
-        
+
     //     if(pokemon_buscado != ''){
     //         fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon_buscado}`)
     //             .then(response => response.json())
